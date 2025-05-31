@@ -13,10 +13,10 @@ This project demonstrates the deployment of a scalable and secure 3-tier web app
 
 
 ## High-level overview of the project:
-![Architecture](\diagram\aws-3tier-architecture-diagram.png)
+(\diagram\aws-3tier-architecture-diagram.png)
 
 
-## 🚀 Tools & Technologies
+## 🚀 Tools & Technologies 
 
 - **AWS EC2**
 - **Amazon RDS**
@@ -35,7 +35,7 @@ This project demonstrates the deployment of a scalable and secure 3-tier web app
 - Managed using an **Auto Scaling Group** to handle traffic fluctuations.
 - **Application Load Balancer (ALB)** distributes incoming web traffic across instances.
 
-### 2️⃣ **Application Tier (Backend Tier)**
+### 2️⃣ **Backend Tier (Application Tier)**
 - Consists of **EC2 instances** in **private subnets** across multiple Availability Zones.
 - Connected via an **internal ALB** to distribute traffic from the frontend tier.
 - Also managed by an **Auto Scaling Group** for scalability.
@@ -141,13 +141,13 @@ terraform init
 - Plan the Deployment:
 
 ```bash
-    terraform plan -var-file="secrets.tfvars"
+    terraform plan -var-file="variables.tfvars"
 ```
 
 Apply the Configuration:
 
 ```bash
-    terraform apply -var-file="secrets.tfvars"
+    terraform apply -var-file="variables.tfvars"
 ```
 
 Review the plan output carefully before applying to ensure all changes are as expected.
