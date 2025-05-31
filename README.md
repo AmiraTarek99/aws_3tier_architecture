@@ -13,7 +13,7 @@ This project demonstrates the deployment of a scalable and secure 3-tier web app
 
 
 ## High-level overview of the project:
-![Architecture](/diagram/aws-3tier-architecture-diagram.png)
+![Architecture](/diagram/aws-3tier-architecture-diagram2.png)
 
 
 ## 🚀 Tools & Technologies 
