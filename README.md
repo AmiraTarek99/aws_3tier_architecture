@@ -141,13 +141,13 @@ terraform init
 - Plan the Deployment:
 
 ```bash
-    terraform plan -var-file="variables.tfvars"
+    terraform plan -var-file="values.tfvars"
 ```
 
 Apply the Configuration:
 
 ```bash
-    terraform apply -var-file="variables.tfvars"
+    terraform apply -var-file="values.tfvars"
 ```
 
 Review the plan output carefully before applying to ensure all changes are as expected.
